@@ -11,9 +11,13 @@ public class Multadd {
 
     public static void main(String[] args) {
         System.out.println(multadd(1, 2, 3));
+
         double a = Math.cos(Math.PI / 4);
         double c = Math.sin(Math.PI / 4);
         System.out.println(multadd(a, 1/2, c));
+
+        System.out.println(multadd(Math.log(10), 1, Math.log(20)));
+        
         System.out.println(expSum(1));
     }
 }
