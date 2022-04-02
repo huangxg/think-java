@@ -16,7 +16,7 @@ public class Fermat {
         System.out.print("Enter n: ");
         int n = scanner.nextInt();
 
-        if (Math.pow(a, n) + Math.pow(b, n) == Math.pow(c, n)) {
+        if ((int)Math.pow(a, n) + (int)Math.pow(b, n) == (int)Math.pow(c, n)) {
             System.out.println("Holy smokes, Fermat was wrong!");
         } else {
             System.out.println("No, that doesn’t work.");

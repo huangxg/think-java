@@ -7,7 +7,7 @@ public class Quadratic {
         int a = scanner.nextInt();
         System.out.print("Please enter b: ");
         int b = scanner.nextInt();
-        System.out.print("Please enter c ");
+        System.out.print("Please enter c: ");
         int c = scanner.nextInt();
         int delta = b * b - 4 * a * c;
 

@@ -7,7 +7,7 @@ public class Triangle {
         int a = scanner.nextInt();
         System.out.print("Please enter b: ");
         int b = scanner.nextInt();
-        System.out.print("Please enter c ");
+        System.out.print("Please enter c: ");
         int c = scanner.nextInt();
 
         if (a >= b + c || b >= c + a || c >= a + b) {
@@ -15,5 +15,7 @@ public class Triangle {
         } else {
             System.out.println("You are serious.");
         }
+
+        scanner.close();
     }
 }
