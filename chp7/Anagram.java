@@ -15,7 +15,6 @@ public class Anagram {
         } else {
             System.out.println("They are not anagrams");
         }
-        
 
         scanner.close();
     }

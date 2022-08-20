@@ -28,7 +28,7 @@ public class Recurse {
         if (length(s) == 0) {
             return;
         } else {
-            printString(rest(s));
+            printBackwrod(rest(s));
             System.out.println(first(s));
         }
     }
