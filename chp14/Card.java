@@ -13,6 +13,10 @@ public class Card {
         this.suit = suit;
     }
 
+    public int getSuit() {
+      return suit;
+    }
+
     public int getRank() {
         return rank;
     }
