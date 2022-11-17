@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Eights {
 
-    private Player one;
-    private Player two;
-    private Hand drawPile;
-    private Hand discardPile;
-    private Scanner in;
+    protected Player one;
+    protected Player two;
+    protected Hand drawPile;
+    protected Hand discardPile;
+    private Scanner in = new Scanner(System.in);;
 
     public Eights() {
         Deck deck = new Deck("Deck");
@@ -25,9 +25,6 @@ public class Eights {
         // put the rest of the deck face down
         drawPile = new Hand("Draw pile");
         deck.dealAll(drawPile);
-
-        // create the scanner we'll use to wait for the user
-        in = new Scanner(System.in);
     }
 
     public boolean isDone() {
@@ -62,7 +59,7 @@ public class Eights {
         discardPile.display();
         System.out.println("Draw pile:");
         System.out.println(drawPile.size() + " cards");
-        in.nextLine();
+        // in.nextLine();
     }
 
     public void takeTurn(Player player) {

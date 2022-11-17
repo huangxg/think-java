@@ -1,7 +1,7 @@
 public class Player {
 
     private String name;
-    private Hand hand;
+    protected Hand hand;
 
     public Player(String name) {
         this.name = name;
@@ -48,7 +48,7 @@ public class Player {
     public static boolean cardMatches(Card card1, Card card2) {
         return card1.getSuit() == card2.getSuit()
             || card1.getRank() == card2.getRank()
-            || card1.getRank() == 8;
+            || card1.getRank() == 6;
     }
 
     public int score() {
