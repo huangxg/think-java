@@ -1,7 +1,7 @@
 import javax.swing.JFrame;
 
 public class Conway {
-    private GridCanvas grid;
+    protected GridCanvas grid;
 
     public Conway() {
         grid = new GridCanvas(5, 10, 20);
@@ -11,9 +11,10 @@ public class Conway {
         grid.turnOn(1, 7);
         grid.turnOn(2, 7);
         grid.turnOn(3, 7);
+        System.out.printf("%d cells on\n", grid.countOn());
     }
 
-    private void mainloop() {
+    protected void mainloop() {
         while (true) {
             this.update();
             grid.repaint();

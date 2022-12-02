@@ -2,7 +2,7 @@ import java.awt.Canvas;
 import java.awt.Graphics;
 
 public class GridCanvas extends Canvas {
-    private Cell[][] array;
+    protected Cell[][] array;
 
     public GridCanvas(int rows, int cols, int size) {
         array = new Cell[rows][cols];
@@ -55,5 +55,19 @@ public class GridCanvas extends Canvas {
             // cell doesn't exist
         }
         return 0;
+    }
+
+    public int countOn() {
+        int n = 0;
+
+        for (int i = 0; i < numRows(); i++) {
+            for (int j = 0; j < numCols(); j++) {
+                if (array[i][j].isOn()) {
+                    n++;
+                }
+            }
+        }
+
+        return n;
     }
 }
